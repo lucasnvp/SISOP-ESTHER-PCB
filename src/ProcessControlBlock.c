@@ -44,5 +44,11 @@ int main(void) {
 	//Muestro el PID Del proceso
 	print_PCB(newPCB);
 
+	//Sumo una instruccion
+	next_ProgramCounter(newPCB);
+
+	//Muestro el PID Del proceso
+	print_PCB(newPCB);
+
 	return EXIT_SUCCESS;
 }

@@ -130,3 +130,14 @@ void print_LineStack(STACKPOINTER_T* auxStackPointer){
 	}
 }
 
+void set_PageCode(PCB_t* PCB, uint32_t PageCode){
+	PCB->PageCode = PageCode;
+}
+
+void set_Quantum(PCB_t* PCB, uint32_t Quantum){
+	PCB->Quantum = Quantum;
+}
+
+void next_ProgramCounter(PCB_t* this){
+	this->ProgramCounter++;
+}
